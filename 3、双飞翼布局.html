@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main {
+            width: 100%;
+            text-align: center;
+            height: 200px;
+            background-color: #f1f1f1;
+            /* overflow: hidden; */
+        }
+        #main-wrap{
+            margin:0px 190px;
+        }
+        .column {
+            float: left;
+        }
+        #left {
+            background-color: blue;
+            width: 190px;
+            height: 200px;
+            margin-left: -100%;
+        }
+        #right {
+            background-color: yellow;
+            width: 190px;
+            height: 200px;
+            margin-left: -190px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main" class="column">
+        <div id="main-wrap">
+            this is main
+        </div>
+    </div>
+    <div id="left" class="column">
+        this is left
+    </div>
+    <div id="right" class="column">
+        this is right
+    </div>
+</body>
+
+</html>

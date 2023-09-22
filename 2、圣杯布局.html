@@ -10,7 +10,8 @@
             text-align: center;
             padding-left: 200px;
             padding-right: 150px;
-            overflow: hidden;
+            /* 也能代替 #footer中的 clear:both */
+            /* overflow: hidden; */
         }
 
         #header {
@@ -42,6 +43,12 @@
 
         #footer {
             background-color: #5f5959;
+            /* clear: both; */
+        }
+        /* 手写clearfix  代替#footer中的 clear:both */
+        .clearfix::after{
+            content: '';
+            display: table;
             clear: both;
         }
     </style>
@@ -49,7 +56,7 @@
 
 <body>
     <div id="header">this is header</div>
-    <div class="container">
+    <div class="container clearfix">
         <div id="center" class="column">this is center</div>
         <div id="left" class="column">this is left</div>
         <div id="right" class="column">this is right</div>

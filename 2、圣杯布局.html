@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            text-align: center;
+            padding-left: 200px;
+            padding-right: 150px;
+            overflow: hidden;
+        }
+
+        #header {
+            background-color: #5f5959;
+        }
+
+        #center {
+            background-color: red;
+            width: 100%;
+        }
+
+        .column {
+            float: left;
+        }
+        #left {
+            position: relative;
+            background-color: blue;
+            width: 200px;
+            margin-left: -100% ;
+            right: 200px;
+        }
+
+        #right {
+            background-color: yellow;
+            width: 150px;
+            /* margin-right:-150px  意思是 #right的宽度在外界看来缩短了150px 他后面的元素会顶过来*/
+            margin-right: -150px;
+        }
+
+        #footer {
+            background-color: #5f5959;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">this is header</div>
+    <div class="container">
+        <div id="center" class="column">this is center</div>
+        <div id="left" class="column">this is left</div>
+        <div id="right" class="column">this is right</div>
+    </div>
+    <div id="footer">this is footer</div>
+</body>
+
+</html>

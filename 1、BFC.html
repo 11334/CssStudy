@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            float: left;
+        }
+        .bfc{
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- 外层容器加bfc直接撑起父元素高度  将浮动元素包裹在内-->
+    <div class="bfc">
+        <img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.Zte3ljd4g6kqrWWyg-8fhAHaEo?pid=ImgDet&rs=1" alt="">
+        <!-- 子元素开启bfc '直接把浮动元素当回事' 与浮动元素在同一个文档流中-->
+        <p class="bfc">这是一段文字</p>
+    </div>
+</body>
+</html>

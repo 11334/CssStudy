@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid #ccc;
+            border-radius:10px;
+            padding: 20px;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .item{
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #666;
+        }
+        /* 设置第二个item    结构化伪类选择器*/
+        .item:nth-child(2){
+            align-self: center;
+            /*  align-self：center 可以让元素同时垂直水平居中 */
+        }
+        .item:nth-child(3){
+            align-self: end;
+            /* align-self: end  可以让元素去左下角 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span class="item"></span>
+        <span class="item"></span>
+        <span class="item"></span>
+    </div>
+</body>
+</html>
